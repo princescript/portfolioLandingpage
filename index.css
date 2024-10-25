@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 85px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    border-bottom: 2px solid #dadada;
+    /* align-items: center; */
+}
+
+.nav-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* min-width: 500px; myntra.css */
+    gap: 4vw;
+    /* background-color: aqua; */
+
+}
+
+.nav h2 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.nav h4 {
+    font-size: 1.1vw;
+}
+
+.nav button {
+    font-size: 1vw;
+    padding: 0.8vw 1.4vw;
+    background-color: #FF735C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.nav i {
+    font-size: 1.2vw;
+    font-weight: 800;
+    display: none;
+}
+
+.content {
+    height: calc(100% - 100px);
+    /*this is a function to find height */
+    width: 100%;
+    /* background-color: rgb(255, 230, 168); */
+    display: flex;
+    position: relative;
+}
+
+.left {
+    height: 100%;
+    width: 55%;
+    /* background-color:crimson; */
+    padding: 5vw 5vw;
+}
+
+.right {
+    height: 100%;
+    width: 45%;
+    /* background-color: aqua; */
+}
+
+.left h2 {
+    font-size: 3.5vw;
+    /* line-height: 4.4vw; */
+}
+
+.left h2 span {
+    color: #FF735C;
+}
+
+.left p {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #666;
+    width: 100%;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+}
+
+.content button {
+    font-size: 1vw;
+    padding: 1.1vw 2.1vw;
+    background-color: #FF735C;
+    color: #fff;
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+@media (max-width:600px) {
+    .nav {
+        /* background-color: lightseagreen; */
+        /* color: white; */
+        padding: 0 6vw;
+        height: 60px;
+    }
+
+    .nav h2 {
+        font-size: 5.1vw;
+    }
+
+    .nav h4 {
+        font-size: 4.5vw;
+        display: none;
+    }
+
+    .nav button {
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 4.5vw;
+    }
+
+    .content {
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 48%;
+        padding: 4vw 6vw;
+    }
+
+    .right {
+        width: 100%;
+        height: 52%;
+    }
+
+    .left h2 {
+        font-size: 7vw;
+        line-height: 6vw;
+    }
+
+    .left p {
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .content button {
+        padding: 3vw 4vw;
+        font-size: 3vw;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+}
